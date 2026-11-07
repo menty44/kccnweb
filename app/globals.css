@@ -17,3 +17,54 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: radial-gradient(ellipse at center, black, transparent 75%);
+}
+
+.motion-aurora {
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+
+.motion-aurora-delayed {
+  animation: aurora-drift 18s ease-in-out infinite alternate-reverse;
+}
+
+.motion-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.motion-ping {
+  animation: soft-ping 2s ease-out infinite;
+}
+
+@keyframes aurora-drift {
+  to {
+    transform: translate3d(-5rem, 3rem, 0) scale(1.12);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes soft-ping {
+  50% {
+    box-shadow: 0 0 0 6px rgba(244, 185, 66, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-aurora,
+  .motion-aurora-delayed,
+  .motion-float,
+  .motion-ping {
+    animation: none;
+  }
+}

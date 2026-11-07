@@ -27,75 +27,99 @@ const programs = [
 export default function Home() {
   return (
     <main className="overflow-hidden bg-[#f7f5f0] text-[#12223b]">
-      <section className="relative isolate overflow-hidden bg-[#102e60] px-5 pb-14 pt-5 text-white sm:px-8 lg:px-12 lg:pb-20">
-        <div className="absolute -right-36 -top-56 h-[38rem] w-[38rem] rounded-full border-[75px] border-[#1e4a89] opacity-70" />
-        <div className="absolute -bottom-48 -left-36 h-96 w-96 rounded-full bg-[#f7b844] opacity-10 blur-3xl" />
+      <section className="relative isolate overflow-hidden bg-[#090b10] px-5 pb-16 pt-5 text-white sm:px-8 lg:px-12 lg:pb-24">
+        <div className="hero-grid absolute inset-0 opacity-30" />
+        <div className="motion-aurora absolute -right-48 -top-64 h-[42rem] w-[42rem] rounded-full bg-[#6041c8]/30 blur-[100px]" />
+        <div className="motion-aurora-delayed absolute -bottom-48 -left-32 h-[32rem] w-[32rem] rounded-full bg-[#ffb700]/15 blur-[100px]" />
+        <svg aria-hidden="true" className="absolute -right-28 top-24 h-[32rem] w-[44rem] opacity-40" fill="none" viewBox="0 0 704 512">
+          <path d="M92 430C166 132 312 116 390 216c87 112 146 41 282-178" stroke="url(#hero-wave)" strokeLinecap="round" strokeWidth="2" />
+          <path d="M34 471C125 252 252 230 340 297c100 76 212-10 351-222" stroke="url(#hero-wave)" strokeLinecap="round" strokeWidth="2" />
+          <path d="M197 45c60 18 98 54 117 108 31 90 107 104 227 42" stroke="url(#hero-wave)" strokeLinecap="round" strokeWidth="2" />
+          <defs>
+            <linearGradient id="hero-wave" x1="20" x2="683" y1="30" y2="470" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#F4B942" stopOpacity="0" />
+              <stop offset=".48" stopColor="#F4B942" />
+              <stop offset="1" stopColor="#9D7BFF" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
 
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between">
           <a className="flex items-center gap-3" href="#">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-[#f7b844] text-lg font-black tracking-tighter text-[#102e60]">K</span>
+            <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-[#ffd266] to-[#e69b19] text-lg font-black tracking-tighter text-[#17120a] shadow-lg shadow-[#e69b19]/20">K</span>
             <span className="hidden text-sm font-bold tracking-[0.18em] sm:block">KCCN</span>
           </a>
-          <div className="hidden items-center gap-7 text-sm font-medium text-blue-100 md:flex">
-            <a className="transition hover:text-[#f7c969]" href="#watch">Watch</a>
-            <a className="transition hover:text-[#f7c969]" href="#listen">Listen</a>
-            <a className="transition hover:text-[#f7c969]" href="#about">Our mission</a>
-            <a className="transition hover:text-[#f7c969]" href="#connect">Connect</a>
+          <div className="hidden items-center rounded-full border border-white/10 bg-white/[0.04] px-2 py-1.5 text-sm font-medium text-zinc-300 backdrop-blur-md md:flex">
+            <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#watch">Watch</a>
+            <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#listen">Listen</a>
+            <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#about">Our mission</a>
+            <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#connect">Connect</a>
           </div>
           <div className="flex items-center gap-2 text-sm font-semibold">
-            <a className="rounded-full px-4 py-2.5 text-white transition hover:bg-white/10" href="/login">Login</a>
-            <a className="rounded-full bg-[#f7b844] px-4 py-2.5 text-[#102e60] transition hover:bg-[#ffcc68]" href="/register">Register</a>
+            <a className="rounded-full px-4 py-2.5 text-zinc-200 transition hover:bg-white/10 hover:text-white" href="/login">Login</a>
+            <a className="rounded-full bg-white px-4 py-2.5 text-[#111319] transition hover:bg-[#f4b942]" href="/register">Register</a>
           </div>
         </nav>
 
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-12 pb-4 pt-16 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:pt-24">
+        <div className="relative z-10 mx-auto grid max-w-7xl gap-14 pb-5 pt-20 lg:grid-cols-[1.03fr_.97fr] lg:items-center lg:pt-28">
           <div className="max-w-2xl">
-            <p className="mb-5 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#f7c969]">
-              <span className="h-2 w-2 rounded-full bg-[#f7b844] shadow-[0_0_0_5px_rgba(247,184,68,.16)]" />
-              Uganda&apos;s community faith network
+            <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#f4b942]/25 bg-[#f4b942]/10 px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#ffd66f]">
+              <span className="motion-ping h-1.5 w-1.5 rounded-full bg-[#f4b942]" />
+              Streaming live from Uganda
             </p>
-            <h1 className="text-5xl font-bold leading-[0.98] tracking-[-0.05em] text-white sm:text-6xl lg:text-7xl">
-              Faith for every <span className="text-[#f7c969]">moment.</span>
+            <h1 className="text-5xl font-bold leading-[0.95] tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl">
+              A brighter signal <span className="bg-gradient-to-r from-[#f7bf4b] via-[#ffe197] to-[#f7bf4b] bg-clip-text text-transparent">for your soul.</span>
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-blue-100">
-              Gospel video, uplifting audio, and a community that empowers lives across Uganda and beyond.
+            <p className="mt-7 max-w-xl text-lg leading-8 text-zinc-400">
+              Discover live gospel video, uplifting audio, and a community created to empower lives across Uganda and beyond.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <a className="inline-flex items-center gap-3 rounded-full bg-[#f7b844] px-6 py-3.5 text-sm font-bold text-[#102e60] transition hover:-translate-y-0.5 hover:bg-[#ffcc68]" href="#watch">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#102e60] text-[#f7c969]"><PlayIcon className="h-3 w-3" /></span>
+              <a className="inline-flex items-center gap-3 rounded-full bg-[#f4b942] px-6 py-3.5 text-sm font-bold text-[#15120b] shadow-lg shadow-[#f4b942]/15 transition hover:-translate-y-0.5 hover:bg-[#ffd369]" href="#watch">
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#16130d] text-[#f7c969]"><PlayIcon className="h-3 w-3" /></span>
                 Watch KCCN Live
               </a>
-              <a className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/10" href="#listen">
+              <a className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-bold text-white transition hover:border-white/30 hover:bg-white/[0.08]" href="#listen">
                 Listen to Radio <ArrowUpRight />
               </a>
             </div>
+            <div className="mt-12 flex items-center gap-7 text-sm text-zinc-400">
+              <div><p className="text-xl font-bold text-white">24/7</p><p className="mt-1 text-xs">Inspiration</p></div>
+              <span className="h-8 w-px bg-white/15" />
+              <div><p className="text-xl font-bold text-white">Live</p><p className="mt-1 text-xs">Gospel &amp; worship</p></div>
+              <span className="h-8 w-px bg-white/15" />
+              <div><p className="text-xl font-bold text-white">Kagadi</p><p className="mt-1 text-xs">Uganda</p></div>
+            </div>
           </div>
 
-          <div id="watch" className="relative mx-auto w-full max-w-[34rem]">
-            <div className="absolute -inset-4 rounded-[2rem] border border-white/15" />
-            <div className="relative overflow-hidden rounded-[1.6rem] bg-[#173b71] p-3 shadow-2xl shadow-[#071833]/50">
-              <div className="relative flex aspect-[1.2/1] overflow-hidden rounded-[1.15rem] bg-[radial-gradient(circle_at_45%_20%,#f8cb6e_0,transparent_12%),radial-gradient(circle_at_75%_30%,#477cc5_0,transparent_25%),linear-gradient(135deg,#0d234b_10%,#295b9b_55%,#112a56_100%)]">
-                <div className="absolute inset-0 bg-[linear-gradient(130deg,transparent_30%,rgba(255,255,255,.1)_30%,transparent_32%)]" />
-                <div className="absolute left-[13%] top-[13%] h-10 w-24 rounded-full bg-[#f7b844]/90 blur-[2px]" />
-                <div className="absolute bottom-0 left-1/2 h-48 w-32 -translate-x-1/2 rounded-t-full bg-[#092044] shadow-[0_-8px_0_#f7b844]" />
-                <div className="absolute bottom-10 left-1/2 h-16 w-40 -translate-x-1/2 rounded-t-[100%] bg-[#183e75]" />
-                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-[#081d3f] via-[#081d3f]/50 to-transparent p-5 pt-20">
+          <div id="watch" className="motion-float relative mx-auto w-full max-w-[34rem]">
+            <div className="absolute -inset-5 rounded-[2.2rem] bg-gradient-to-br from-[#f4b942]/30 via-transparent to-[#8f65ff]/30 blur-xl" />
+            <div className="relative overflow-hidden rounded-[1.65rem] border border-white/15 bg-white/[0.06] p-3 shadow-2xl shadow-black/50 backdrop-blur-xl">
+              <div className="relative flex aspect-[1.2/1] overflow-hidden rounded-[1.15rem] bg-[radial-gradient(circle_at_42%_23%,#f1bd4c_0,transparent_9%),radial-gradient(circle_at_78%_18%,#8668e6_0,transparent_28%),linear-gradient(140deg,#111827_0%,#1d173a_53%,#12161e_100%)]">
+                <svg aria-hidden="true" className="absolute inset-0 h-full w-full opacity-70" fill="none" viewBox="0 0 540 450">
+                  <circle cx="270" cy="210" r="115" stroke="#F4B942" strokeDasharray="3 12" strokeOpacity=".7" />
+                  <circle cx="270" cy="210" r="150" stroke="white" strokeOpacity=".16" />
+                  <path d="M31 310C135 258 174 376 272 286c89-82 149 13 249-129" stroke="#F4B942" strokeLinecap="round" strokeWidth="2" />
+                </svg>
+                <div className="absolute left-[13%] top-[13%] h-10 w-24 rounded-full bg-[#f4b942]/80 blur-[5px]" />
+                <div className="absolute bottom-0 left-1/2 h-48 w-32 -translate-x-1/2 rounded-t-full bg-[#0b0d13] shadow-[0_-8px_0_#f4b942]" />
+                <div className="absolute bottom-10 left-1/2 h-16 w-40 -translate-x-1/2 rounded-t-[100%] bg-[#25203c]" />
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-[#090b10] via-[#090b10]/70 to-transparent p-5 pt-20">
                   <div>
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#f7c969]">Live now</p>
+                    <p className="mb-1 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-[#ffd66f]"><span className="h-1.5 w-1.5 rounded-full bg-[#f4b942]" /> Live now</p>
                     <p className="text-sm font-bold">Morning Glory Service</p>
                   </div>
-                  <button aria-label="Play Morning Glory Service" className="grid h-12 w-12 place-items-center rounded-full bg-[#f7b844] pl-0.5 text-[#102e60] transition hover:scale-105">
+                  <button aria-label="Play Morning Glory Service" className="grid h-12 w-12 place-items-center rounded-full bg-[#f4b942] pl-0.5 text-[#17120a] transition hover:scale-105">
                     <PlayIcon className="h-5 w-5" />
                   </button>
                 </div>
               </div>
               <div className="flex items-center justify-between px-2 py-3 text-xs">
-                <span className="font-semibold text-blue-100">KCCN TV &bull; Online</span>
-                <span className="flex items-center gap-1.5 font-bold text-[#f7c969]"><i className="h-1.5 w-1.5 rounded-full bg-[#f7b844]" /> 1.2k watching</span>
+                <span className="font-semibold text-zinc-300">KCCN TV &bull; Online</span>
+                <span className="flex items-center gap-1.5 font-bold text-[#ffd66f]"><i className="h-1.5 w-1.5 rounded-full bg-[#f4b942]" /> 1.2k watching</span>
               </div>
             </div>
-            <div className="absolute -bottom-7 -left-5 rounded-2xl bg-white px-4 py-3 text-[#102e60] shadow-xl sm:-left-12">
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#6580a6]">Daily inspiration</p>
+            <div className="absolute -bottom-7 -left-5 rounded-2xl border border-white/10 bg-[#181b23]/90 px-4 py-3 text-white shadow-xl shadow-black/30 backdrop-blur sm:-left-12">
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#ffd66f]">Daily inspiration</p>
               <p className="mt-0.5 text-sm font-bold">Streaming hope, 24/7</p>
             </div>
           </div>
