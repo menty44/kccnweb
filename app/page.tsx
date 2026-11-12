@@ -23,7 +23,7 @@ const Waveform = () => (
 const programs = [
   { time: "07:00", title: "Morning Devotion", type: "Live now", image: "sunrise" },
   { time: "12:30", title: "The Word Today", type: "Teaching", image: "teaching" },
-  { time: "18:00", title: "Kratos Worship Night", type: "Music", image: "worship" },
+  { time: "18:00", title: "Kratos Music Programmes and studio recording", type: "Music", image: "worship" },
 ];
 
 export default function Home() {
@@ -89,7 +89,7 @@ export default function Home() {
               <span className="h-8 w-px bg-white/15" />
               <div><p className="text-xl font-bold text-white">Live</p><p className="mt-1 text-xs">Gospel &amp; worship</p></div>
               <span className="h-8 w-px bg-white/15" />
-              <div><p className="text-xl font-bold text-white">Kagadi</p><p className="mt-1 text-xs">Uganda</p></div>
+              <div><p className="text-xl font-bold text-white">kratos</p><p className="mt-1 text-xs">Uganda</p></div>
             </div>
           </div>
 
@@ -207,7 +207,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#c77c14]">More than a broadcast</p>
             <h2 className="mt-3 max-w-2xl text-3xl font-bold leading-tight tracking-[-0.045em] sm:text-4xl">A network growing faith, unity, and opportunity.</h2>
-            <p className="mt-5 max-w-2xl leading-7 text-[#48627f]">Kratos brings together Christian media, youth development, education, outreach, and compassionate service to create positive transformation in Kagadi, Uganda, and beyond.</p>
+            <p className="mt-5 max-w-2xl leading-7 text-[#48627f]">Kratos brings together Christian media, youth development, education, outreach, and compassionate service to create positive transformation in kratos, Uganda, and beyond.</p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Gospel media & outreach", "Youth mentorship", "Education & support", "Events & community"].map((item) => (
                 <div className="flex items-center gap-3 rounded-xl bg-white px-4 py-3.5 text-sm font-bold" key={item}>
@@ -223,20 +223,20 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
           <div>
             <div className="flex items-center gap-3 text-white"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#f7b844] text-base font-black text-[#102e60]">K</span><span className="font-bold tracking-[0.15em]">Kratos</span></div>
-            <p className="mt-5 max-w-xs text-sm leading-6 text-blue-200">Kagadi Christian Community Network — inspiring and empowering lives through faith.</p>
+            <p className="mt-5 max-w-xs text-sm leading-6 text-blue-200">kratos Christian Community Network — inspiring and empowering lives through faith.</p>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#f7c969]">Find us</p>
-            <p className="mt-4 text-sm leading-6">Kagadi Town Council<br />Kagadi District, Uganda<br />East Africa</p>
+            <p className="mt-4 text-sm leading-6">kratos Town Council<br />kratos District, Uganda<br />East Africa</p>
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#f7c969]">Get in touch</p>
-            <a className="mt-4 block text-sm hover:text-[#f7c969]" href="mailto:Kagadichristiancommunity.net@gmail.com">Kagadichristiancommunity.net@gmail.com</a>
+            <a className="mt-4 block text-sm hover:text-[#f7c969]" href="mailto:kratoschristiancommunity.net@gmail.com">kratoschristiancommunity.net@gmail.com</a>
             <a className="mt-2 block text-sm hover:text-[#f7c969]" href="tel:+256792948448">+256 792 948 448</a>
             <p className="mt-1 text-sm">+256 751 493 937 / +256 752 045 413</p>
           </div>
         </div>
-        <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-5 text-xs text-blue-300">© 2026 Kagadi Christian Community Network Limited. All rights reserved.</div>
+        <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-5 text-xs text-blue-300">© 2026 kratos Christian Community Network Limited. All rights reserved.</div>
       </footer>
     </main>
   );

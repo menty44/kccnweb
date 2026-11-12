@@ -27,9 +27,9 @@ export function AuthShell({
           <span className="text-sm font-bold tracking-[0.18em]">Kratos</span>
         </Link>
         <div className="max-w-sm">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ffd66f]">Kagadi Christian Community Network</p>
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ffd66f]">kratos Christian Community Network</p>
           <h2 className="mt-4 text-4xl font-bold leading-tight tracking-[-0.05em]">A brighter signal for your soul.</h2>
-          <p className="mt-5 leading-7 text-zinc-400">Join a community made for gospel, encouragement, and growth — from Kagadi to the world.</p>
+          <p className="mt-5 leading-7 text-zinc-400">Join a community made for gospel, encouragement, and growth — from kratos to the world.</p>
         </div>
         <div className="flex items-center gap-3 text-xs text-zinc-500">
           <span className="h-2 w-2 rounded-full bg-[#f4b942]" />
