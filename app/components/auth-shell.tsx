@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 type AuthShellProps = {
@@ -22,7 +23,7 @@ export function AuthShell({
 
       <aside className="relative z-10 hidden flex-col justify-between rounded-[2rem] border border-white/10 bg-white/[0.04] p-10 backdrop-blur-xl lg:flex">
         <Link className="flex items-center gap-3" href="/">
-          <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-[#ffd266] to-[#e69b19] text-lg font-black tracking-tighter text-[#17120a]">K</span>
+          <Image alt="Kratos logo" className="h-11 w-11 object-contain" height={44} priority src="/logoone.png" width={44} />
           <span className="text-sm font-bold tracking-[0.18em]">Kratos</span>
         </Link>
         <div className="max-w-sm">
@@ -39,7 +40,7 @@ export function AuthShell({
       <section className="relative z-10 flex items-center justify-center py-10 lg:py-0">
         <div className="w-full max-w-md">
           <Link className="mb-14 flex items-center gap-3 lg:hidden" href="/">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-[#ffd266] to-[#e69b19] text-lg font-black tracking-tighter text-[#17120a]">K</span>
+            <Image alt="Kratos logo" className="h-11 w-11 object-contain" height={44} priority src="/logoone.png" width={44} />
             <span className="text-sm font-bold tracking-[0.18em]">Kratos</span>
           </Link>
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ffd66f]">{eyebrow}</p>

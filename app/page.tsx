@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const PlayIcon = ({ className = "" }: { className?: string }) => (
   <svg aria-hidden="true" className={className} fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M8 5.14v13.72a1 1 0 0 0 1.5.87l10.65-6.86a1.03 1.03 0 0 0 0-1.74L9.5 4.27A1 1 0 0 0 8 5.14Z" fill="currentColor" />
@@ -46,7 +48,7 @@ export default function Home() {
 
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between">
           <a className="flex items-center gap-3" href="#">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-[#ffd266] to-[#e69b19] text-lg font-black tracking-tighter text-[#17120a] shadow-lg shadow-[#e69b19]/20">K</span>
+            <Image alt="Kratos logo" className="h-11 w-11 object-contain" height={44} priority src="/logoone.png" width={44} />
             <span className="hidden text-sm font-bold tracking-[0.18em] sm:block">Kratos</span>
           </a>
           <div className="hidden items-center rounded-full border border-white/10 bg-white/[0.04] px-2 py-1.5 text-sm font-medium text-zinc-300 backdrop-blur-md md:flex">
