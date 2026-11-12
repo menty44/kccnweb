@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KCCN | Empowering Lives",
+  title: "Kratos | Empowering Lives",
   description:
     "Kagadi Christian Community Network brings gospel video, audio, and community inspiration to Uganda and beyond.",
 };

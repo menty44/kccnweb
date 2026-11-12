@@ -21,7 +21,7 @@ const Waveform = () => (
 const programs = [
   { time: "07:00", title: "Morning Devotion", type: "Live now", image: "sunrise" },
   { time: "12:30", title: "The Word Today", type: "Teaching", image: "teaching" },
-  { time: "18:00", title: "KCCN Worship Night", type: "Music", image: "worship" },
+  { time: "18:00", title: "Kratos Worship Night", type: "Music", image: "worship" },
 ];
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between">
           <a className="flex items-center gap-3" href="#">
             <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-[#ffd266] to-[#e69b19] text-lg font-black tracking-tighter text-[#17120a] shadow-lg shadow-[#e69b19]/20">K</span>
-            <span className="hidden text-sm font-bold tracking-[0.18em] sm:block">KCCN</span>
+            <span className="hidden text-sm font-bold tracking-[0.18em] sm:block">Kratos</span>
           </a>
           <div className="hidden items-center rounded-full border border-white/10 bg-white/[0.04] px-2 py-1.5 text-sm font-medium text-zinc-300 backdrop-blur-md md:flex">
             <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#watch">Watch</a>
@@ -76,7 +76,7 @@ export default function Home() {
             <div className="mt-9 flex flex-wrap gap-3">
               <a className="inline-flex items-center gap-3 rounded-full bg-[#f4b942] px-6 py-3.5 text-sm font-bold text-[#15120b] shadow-lg shadow-[#f4b942]/15 transition hover:-translate-y-0.5 hover:bg-[#ffd369]" href="#watch">
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-[#16130d] text-[#f7c969]"><PlayIcon className="h-3 w-3" /></span>
-                Watch KCCN Live
+                Watch Kratos Live
               </a>
               <a className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-bold text-white transition hover:border-white/30 hover:bg-white/[0.08]" href="#listen">
                 Listen to Radio <ArrowUpRight />
@@ -114,7 +114,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-between px-2 py-3 text-xs">
-                <span className="font-semibold text-zinc-300">KCCN TV &bull; Online</span>
+                <span className="font-semibold text-zinc-300">Kratos TV &bull; Online</span>
                 <span className="flex items-center gap-1.5 font-bold text-[#ffd66f]"><i className="h-1.5 w-1.5 rounded-full bg-[#f4b942]" /> 1.2k watching</span>
               </div>
             </div>
@@ -139,13 +139,13 @@ export default function Home() {
           <article className="rounded-[1.5rem] bg-[#f7b844] p-6 sm:p-8">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#83540d]">KCCN Radio</p>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#83540d]">Kratos Radio</p>
                 <h3 className="mt-2 text-2xl font-bold tracking-[-0.04em] text-[#102e60]">The sound of hope</h3>
               </div>
               <span className="rounded-full bg-[#102e60] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#f7c969]">On air</span>
             </div>
             <div className="mt-10 flex flex-wrap items-center gap-5">
-              <button aria-label="Play KCCN Radio" className="grid h-14 w-14 place-items-center rounded-full bg-[#102e60] pl-1 text-[#f7c969] transition hover:scale-105"><PlayIcon className="h-5 w-5" /></button>
+              <button aria-label="Play Kratos Radio" className="grid h-14 w-14 place-items-center rounded-full bg-[#102e60] pl-1 text-[#f7c969] transition hover:scale-105"><PlayIcon className="h-5 w-5" /></button>
               <div>
                 <p className="text-sm font-bold text-[#102e60]">Gospel &amp; Grace</p>
                 <p className="mt-0.5 text-sm text-[#76500f]">Your soundtrack for a better day.</p>
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="relative mx-auto grid aspect-square w-full max-w-sm place-items-center rounded-full bg-[#1f5a9c]">
             <div className="absolute inset-7 rounded-full border border-white/25" />
             <div className="relative text-center text-white">
-              <p className="text-6xl font-bold tracking-[-0.06em]">KCCN</p>
+              <p className="text-6xl font-bold tracking-[-0.06em]">Kratos</p>
               <p className="mt-2 text-xs font-bold uppercase tracking-[0.22em] text-[#f7c969]">Empowering lives</p>
             </div>
             <span className="absolute -bottom-3 rounded-full bg-[#f7b844] px-5 py-2 text-xs font-bold text-[#102e60]">Est. in faith</span>
@@ -205,7 +205,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#c77c14]">More than a broadcast</p>
             <h2 className="mt-3 max-w-2xl text-3xl font-bold leading-tight tracking-[-0.045em] sm:text-4xl">A network growing faith, unity, and opportunity.</h2>
-            <p className="mt-5 max-w-2xl leading-7 text-[#48627f]">KCCN brings together Christian media, youth development, education, outreach, and compassionate service to create positive transformation in Kagadi, Uganda, and beyond.</p>
+            <p className="mt-5 max-w-2xl leading-7 text-[#48627f]">Kratos brings together Christian media, youth development, education, outreach, and compassionate service to create positive transformation in Kagadi, Uganda, and beyond.</p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Gospel media & outreach", "Youth mentorship", "Education & support", "Events & community"].map((item) => (
                 <div className="flex items-center gap-3 rounded-xl bg-white px-4 py-3.5 text-sm font-bold" key={item}>
@@ -220,7 +220,7 @@ export default function Home() {
       <footer id="connect" className="bg-[#0d234b] px-5 py-12 text-blue-100 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
           <div>
-            <div className="flex items-center gap-3 text-white"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#f7b844] text-base font-black text-[#102e60]">K</span><span className="font-bold tracking-[0.15em]">KCCN</span></div>
+            <div className="flex items-center gap-3 text-white"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#f7b844] text-base font-black text-[#102e60]">K</span><span className="font-bold tracking-[0.15em]">Kratos</span></div>
             <p className="mt-5 max-w-xs text-sm leading-6 text-blue-200">Kagadi Christian Community Network — inspiring and empowering lives through faith.</p>
           </div>
           <div>
