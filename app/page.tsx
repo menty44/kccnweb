@@ -56,6 +56,7 @@ export default function Home() {
             <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#listen">Listen</a>
             <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#about">Our mission</a>
             <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="#connect">Connect</a>
+            <a className="rounded-full px-3 py-1.5 transition hover:bg-white/10 hover:text-white" href="/charity">Charity</a>
           </div>
           <div className="flex items-center gap-2 text-sm font-semibold">
             <a className="rounded-full px-4 py-2.5 text-zinc-200 transition hover:bg-white/10 hover:text-white" href="/login">Login</a>
