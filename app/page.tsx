@@ -232,8 +232,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#f7c969]">Get in touch</p>
             <a className="mt-4 block text-sm hover:text-[#f7c969]" href="mailto:kratoschristiancommunity.net@gmail.com">kratoschristiancommunity.net@gmail.com</a>
-            <a className="mt-2 block text-sm hover:text-[#f7c969]" href="tel:+256792948448">+256 792 948 448</a>
-            <p className="mt-1 text-sm">+256 751 493 937 / +256 752 045 413</p>
+            <a className="mt-2 block text-sm hover:text-[#f7c969]" href="tel:+256792948448">+256 792 948 448 / +256 752 045 413</a>
           </div>
         </div>
         <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-5 text-xs text-blue-300">© 2026 kratos Christian Community Network Limited. All rights reserved.</div>
