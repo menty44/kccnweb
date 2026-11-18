@@ -23,7 +23,7 @@ export default function LoginPage() {
     try {
       const token = await login(email, password);
       sessionStorage.setItem("kccn.authToken", token);
-      router.push("/");
+      router.push("/dashboard");
     } catch (caughtError) {
       setError(
         caughtError instanceof AuthApiError
